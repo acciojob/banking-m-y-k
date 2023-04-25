@@ -15,6 +15,14 @@ class Pair {
 public class CurrentAccount extends BankAccount{
     String tradeLicenseId; //consists of Uppercase English characters only
 
+    public String getTradeLicenseId() {
+        return tradeLicenseId;
+    }
+
+    public void setTradeLicenseId(String tradeLicenseId) {
+        this.tradeLicenseId = tradeLicenseId;
+    }
+
     public CurrentAccount(String name, double balance, double minBalance) {
 
         super(name, balance, minBalance);
