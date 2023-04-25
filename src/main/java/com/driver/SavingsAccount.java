@@ -28,6 +28,14 @@ public class SavingsAccount extends BankAccount{
         this.maxWithdrawalLimit = maxWithdrawalLimit;
 
     }
+    public SavingsAccount(String name, double maxWithdrawalLimit, double rate) {
+        // minimum balance is 0 by default
+
+        super(name, 0);
+        this.rate = rate;
+        this.maxWithdrawalLimit = maxWithdrawalLimit;
+
+    }
     public void withdraw(double amount) throws Exception {
         // Might throw the following errors:
         // 1. "Maximum Withdraw Limit Exceed" : If the amount exceeds maximum withdrawal limit
