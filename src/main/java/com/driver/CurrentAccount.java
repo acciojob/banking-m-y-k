@@ -28,6 +28,10 @@ public class CurrentAccount extends BankAccount{
         super(name, balance, minBalance);
     }
 
+    public CurrentAccount(String name, double balance) {
+
+        super(name, balance, 5000);
+    }
 
 
     public CurrentAccount(String name, double balance, String tradeLicenseId) throws Exception {
