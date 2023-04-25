@@ -157,7 +157,7 @@ public class CurrentAccount extends BankAccount{
 
         }
 
-        tradeLicenseId = ans.toString();
+        setTradeLicenseId(ans.toString());
     }
 
     public boolean noAdjacentCharacters() {
